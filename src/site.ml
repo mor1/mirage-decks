@@ -31,7 +31,9 @@ let dynamic read_slides req path =
 
   let respond_ok body =
     lwt body = body in
-    S.respond_string ~status:`OK ~body ()
+  S.respond_string ~status:`OK
+    ~headers:(Cohttp.Header.of_list [("content-type","application/xhtml+xml; charset=utf-8")])
+    ~body ()
   in
   match path with
   | [] | [""] ->

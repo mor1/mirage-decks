@@ -154,7 +154,7 @@ let index ~req ~path =
     <:html< <ul>$list:decks$</ul> >>
   in
   let title = "openmirage.org | decks" in
-  return (Foundation.(page ~body:(body ~title ~headers:[] ~content)))
+  return (Foundation.(page ~body:(body ~title ~headers:[] ~content ())))
 
 module Reveal = struct
 
