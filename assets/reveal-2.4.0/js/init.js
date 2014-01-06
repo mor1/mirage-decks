@@ -1,3 +1,4 @@
+$(window).load(function() { 
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
@@ -12,12 +13,12 @@ Reveal.initialize({
 
     // Optional libraries used to extend on reveal.js
     dependencies: [
-        { src: "/reveal-2.4.0/lib/js/classList.js", condition: function() { return !document.body.classList; } },
+//        { src: "/reveal-2.4.0/lib/js/classList.js", condition: function() { return !document.body.classList; } },
         { src: "/reveal-2.4.0/plugin/markdown/marked.js", condition: function() { return !!document.querySelector( "[data-markdown]" ); } },
         { src: "/reveal-2.4.0/plugin/markdown/markdown.js", condition: function() { return !!document.querySelector( "[data-markdown]" ); } },
         { src: "/reveal-2.4.0/plugin/highlight/highlight.js", async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: "/reveal-2.4.0/plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
-        { src: "/reveal-2.4.0/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
+//        { src: "/reveal-2.4.0/plugin/zoom-js/zoom.js", async: true, condition: function() { return !!document.body.classList; } },
+//        { src: "/reveal-2.4.0/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
         // { src: "/reveal-2.4.0/plugin/search/search.js", async: true, condition: function() { return !!document.body.classList; } }
         // { src: "/reveal-2.4.0/plugin/remotes/remotes.js", async: true, condition: function() { return !!document.body.classList; } }
     ]
@@ -33,3 +34,6 @@ var updateSlideNumber = function(event) {
 
 Reveal.addEventListener("ready", updateSlideNumber);
 Reveal.addEventListener("slidechanged", updateSlideNumber);
+
+})
+

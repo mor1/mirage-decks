@@ -189,6 +189,7 @@ module Reveal = struct
           <link rel="stylesheet" href="/reveal-2.4.0/css/theme/horizon.css" id="theme"
                 media="all"> </link>
           <link rel="stylesheet" href="/css/site.css" media="all"> </link>
+       <script src="/js/jquery-1.9.1.min.js"></script>
 
           <base href=$str:base$ />
 
