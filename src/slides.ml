@@ -170,7 +170,6 @@ module Reveal = struct
     in
     let base = "/" ^ deck.permalink ^ "/" in
     <:html<
-      <html lang="en">
         <head>
           <meta charset="utf-8" />
           <title>$str:title$</title>
@@ -212,7 +211,6 @@ module Reveal = struct
           <script src="/reveal-2.4.0/js/reveal.min.js"> </script>
           <script src="/reveal-2.4.0/js/init.js"> </script>
         </body>
-      </html>
     >>
 
 end
