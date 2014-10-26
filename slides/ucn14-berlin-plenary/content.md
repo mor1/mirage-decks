@@ -7,6 +7,9 @@
 Jon Crowcroft <small>University of Cambridge</small>
 [@tforcworc](https://twitter.com/tforcworc)
 
+Richard Mortier <small>University of Nottingham<small>for now...</small></small>
+[@mort___](https://twitter.com/mort___)
+
 <http://decks.openmirage.org/ucn13-berlin-plenary>
 
 <small>
