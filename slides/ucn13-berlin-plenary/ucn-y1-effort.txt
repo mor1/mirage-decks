@@ -1,0 +1,11 @@
+UCN 611001 RG 72733
+
+Thomas Leonard 12mm WP1 PIH Arch
+cubieboard/arm/mirage
+D1.1 m9
+
+Carlos Molina-Jimenez 11mm  WP4
+D4.1 secure/ethics m12
+
+me+carlos 1mm + 1mm WP5
+D5.1 use cases m9

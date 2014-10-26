@@ -1,0 +1,51 @@
+WP1
+
+TSA	EURC	FOKUS	CAM	NOTT	PTIN	NICTA	
+10	￼4	3￼	24	￼16￼	6￼	6	￼	
+
+Requirements M1-9
+CAM, NOTT, NICTA, TSA, EURC, PTIN
+
+Arch  3-30
+CAM, NOTT, NICTA, FOKUS, PTIN, TSA
+
+Components impl  6-33
+CAM, NOTT, NICTA, TSA, EURC, FOKUS, PTIN
+
+D1.1 – PIH Requirements Document
+
+D1.2 – Preliminary PIH Architecture (R, PU, M18)
+
+D1.3 – Final PIH Architecture and Implementation (R+P, PU, M33)
+
+CAM will coordinate the core PIH architectural and implementation
+work. This is illustrated in Figure one, between the secure & private
+API, and the data import and processing lower layer API.
+TSA will contribute to the PIH requirements, and to the architecture
+definition and component implementation related to the cloud based
+data broker and the pub/sub system.
+PTIN will be participating in all WP1 activities. It will contribute
+to the requirements and architecture design of the PIH. PTIN intends
+to evolve its context framework XMPP based (w/ pub/sub extension
+NICTA will contribute to the analyses of PIH requirements,
+specifically in context of the data exploited by the recommendation
+component. NICTA’s analyses will concentrate on the compatibility of
+the API to requirements posed by the state-of-the-art recommender
+systems.
+FOKUS will contribute to the initial system architecture and ensure
+that the interfaces between the primary components are well defined.
+Furthermore, Fraunhofer FOKUS will feed back results and experiences
+from WP5 to update and improve the specification, based on integration
+and testing experience. Fraunhofer will also contribute to the
+implementations of the individual components, with special focus on
+the component interfaces.
+NOTT will continue its close cooperation with Cambridge to work on the
+overall architecture of PIH. This will build upon previous joint work
+in the development of the personal data containers and incorporate
+existing work exploring the development of personal dataware services.
+Nottingham will combine this work with the consideration of user
+requirements in WP4 and the user centred perspectives of data
+collection in WP2.
+EURECOM will mainly contribute to the analysis of system requirements
+and implementation of individual components assuring security and
+privacy.
