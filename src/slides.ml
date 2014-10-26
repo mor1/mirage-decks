@@ -33,6 +33,7 @@ let decks =
       style = Reveal262;
     };
 
+(*
     { permalink = "functionalconf14";
       given = Date.t (2014, 10, 09);
       speakers = [People.thomas];
@@ -216,6 +217,7 @@ let decks =
       title = "Lost in the Edge: Finding Your Way with Signposts";
       style = Reveal240;
     };
+*)
   ]
 
 let index ~req ~path =
