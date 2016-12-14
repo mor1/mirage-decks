@@ -6,7 +6,9 @@ language: c
 install:
   - wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-mirage.sh
 
-script: bash -ex .travis-mirage.sh
+script:
+  - bash -ex .travis-mirage.sh
+  - opam config report
 
 env:
   matrix:

@@ -26,9 +26,7 @@ configure:
 	mirage configure -f src/config.ml $(FLAGS) -t $(MIRAGE_BACKEND)
 
 build:
-	@ [ -r src/Makefile ] \
-	  && ( cd src && make ) \
-	  || echo '"make configure" first!'
+	  cd src && make
 
 clean:
 	[ -r src/Makefile ] && ( cd src && make clean ) || true
