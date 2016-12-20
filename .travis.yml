@@ -5,7 +5,7 @@ services:
   - docker
 
 install:
-  - wget https://raw.githubusercontent.com/mor1/ocaml-ci-scripts/master/.travis-mirage.sh
+  - wget https://raw.githubusercontent.com/mor1/ocaml-ci-scripts/travis-docker/.travis-mirage.sh
 
 script:
   - bash -ex .travis-mirage.sh
