@@ -14,7 +14,7 @@ script:
 env:
   global:
   - FORK_USER=mor1
-
+  - FORK_BRANCH=travis-docker
   matrix:
   - OCAML_VERSION=4.03.0 MIRAGE_BACKEND=unix FLAGS="-vv --net=socket"
   - OCAML_VERSION=4.03.0 MIRAGE_BACKEND=unix FLAGS-"-vv --net=direct"
