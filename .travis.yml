@@ -1,21 +1,25 @@
-sudo: required
-services:
-  - docker
 language: c
 
+sudo: false
+services:
+  - docker
+
 install:
-  - wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-mirage.sh
+  - wget https://raw.githubusercontent.com/mor1/ocaml-ci-scripts/master/.travis-mirage.sh
 
 script:
   - bash -ex .travis-mirage.sh
   - opam config report
 
 env:
+  global:
+  - FORK_USER=mor1
+
   matrix:
-  - OCAML_VERSION=4.03 MIRAGE_BACKEND=unix FLAGS="-vv --net=socket"
-  - OCAML_VERSION=4.03 MIRAGE_BACKEND=unix FLAGS-"-vv --net=direct"
-  - OCAML_VERSION=4.03 MIRAGE_BACKEND=xen DEPLOY=1 XENIMG="decks.openmirage.org"
-    UPDATE_GCC_BINUTILS=1
+  - OCAML_VERSION=4.03.0 MIRAGE_BACKEND=unix FLAGS="-vv --net=socket"
+  - OCAML_VERSION=4.03.0 MIRAGE_BACKEND=unix FLAGS-"-vv --net=direct"
+  - OCAML_VERSION=4.03.0 MIRAGE_BACKEND=xen  DEPLOY=1 UPDATE_GCC_BINUTILS=1
+    XENIMG="decks.openmirage.org"
     FLAGS="-vv --net direct --dhcp false --network 0
            --ip 46.43.42.134 --netmask 255.255.255.128 --gateways 46.43.42.129"
 
