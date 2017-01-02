@@ -9,7 +9,6 @@ install:
 
 script:
   - bash -ex .travis-mirage.sh
-  - opam config report
 
 env:
   matrix:
